@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+  in_frame(:${1:locator} => '${2:value}') do |frame|
+  	in_frame({:${3:locator} => '${4:value}'}, frame) do |frame|
+    	text_field(:${5:object_name}, :${6:locator} => '${7:value}', :frame => frame)
+    end
+  end
+]]></content>
+	<tabTrigger>in_frame_2</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>page-object with multiple in_frames</description>
+</snippet>
