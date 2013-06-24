@@ -1,0 +1,37 @@
+{
+        "scope": "source.ruby",
+
+        "completions":
+        [
+          { "trigger": "page", "contents": "page = ${1:MyWebPageClass}.new(@browser)" },
+            { "trigger": "page_url", "contents": "page_url = '${1:url}'" },
+            { "trigger": "navigate.to", "contents": "page.navigate_to = '${1:url}'"},
+            { "trigger": "wait_until", "contents": "wait_until(${1:timeout}, ${2:message}, ${3:&block})"},
+            { "trigger": "po_button", "contents": "button(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_checkbox", "contents": "checkbox(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_div", "contents": "div(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_file_field", "contents": "file_field(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_form", "contents": "form(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_h1", "contents": "h1(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_h2", "contents": "h2(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_h3", "contents": "h3(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_h4", "contents": "h4(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_h5", "contents": "h5(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_h6", "contents": "h6(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_hidden_field", "contents": "hidden_field(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_image", "contents": "image(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_label", "contents": "label(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_link", "contents": "link(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_list_item", "contents": "list_item(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_ordered_list", "contents": "ordered_list(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_paragraph", "contents": "paragraph(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_radio_button", "contents": "radio_button(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_select_list", "contents": "select_list(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_span", "contents": "span(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_table", "contents": "table(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_cell", "contents": "cell(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_text_area", "contents": "text_area(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_text_field", "contents": "text_field(:${1:object_name}, :${2:locator} => '${3:value}')"},
+            { "trigger": "po_unordered_list", "contents": "unordered_list(:${1:object_name}, :${2:locator} => '${3:value}')"},
+        ]	
+}
