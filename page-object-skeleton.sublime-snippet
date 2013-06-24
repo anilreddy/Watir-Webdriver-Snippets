@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+require 'rubygems'
+require 'watir-webdriver'
+require 'page-object'
+
+require_relative '${1:page object helper class /path/}'
+
+# initialises browser, default will be firefox other's can be specified like :chrome, :ie
+browser = Watir::Browser.new :firefox
+browser.window.maximize
+browser.goto '${2:url}'
+${3:page_object_class_name} = ${4:PageObjectClassName}.new(browser)
+${5:page_object_class_name}.${6:page_object_method_name} '${7:string value 1}' '${8:string value 2..}'
+${9:#continue...}
+
+]]></content>
+	<tabTrigger>page-object</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>page-object skeleton</description>
+</snippet>
