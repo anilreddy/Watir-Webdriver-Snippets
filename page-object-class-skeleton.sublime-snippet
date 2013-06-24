@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+class ${1:ClassName}
+  include PageObject
+
+  text_field(:${2:object_name (exp: username)}, :${3:locator} => '${4:value}')
+  button(:${5:object_name}, :${6:locator} => '${7:value}')
+
+  def ${8:method_1}(${2:object_name (ex: username)})
+    self.${2:object_name (exp: username)} = ${2:object_name (exp: username)}
+    ${5:object_name}
+  end
+
+  def ${9:method_2}
+  	# method_2 steps...
+  end
+end
+]]></content>
+	<tabTrigger>po-class</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>page-object class skeleton</description>
+</snippet>
