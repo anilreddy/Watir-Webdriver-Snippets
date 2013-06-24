@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+  result = ${1:@page}.prompt("${2:prompt name}") do
+  	${1:@page}.button_that_causes_the_prompt
+  end
+  result[:message].should == "${3:Text from the prompt window}"
+]]></content>
+	<tabTrigger>prompt</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>page-object Prompt</description>
+</snippet>
