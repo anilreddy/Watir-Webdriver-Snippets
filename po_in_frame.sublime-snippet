@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+  in_frame(:${1:locator} => '${2:value}') do |frame|
+    text_field(:${3:object_name}, :${4:locator} => '${5:value}', :frame => frame)
+  end
+]]></content>
+	<tabTrigger>in_frame</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>page-object in_frame</description>
+</snippet>
