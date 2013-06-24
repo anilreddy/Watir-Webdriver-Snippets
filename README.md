@@ -1,2 +1,2 @@
-watir-webdriver-auto-completions-for-sublime
+Watir-Webdriver Snippets & Auto Completions
 ============================================
