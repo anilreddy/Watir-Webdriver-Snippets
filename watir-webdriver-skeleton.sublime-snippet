@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+require 'rubygems'
+require 'watir-webdriver'
+
+# initialises browser, default will be firefox other's can be specified like :chrome, :ie
+browser = Watir::Browser.new :firefox
+browser.window.maximize
+browser.goto '${1:url}'
+puts browser.title
+browser.text_field(:${2:locator}, '${3:value}').set '${4:parameter}'
+browser.button(:${5:locator}, '${6:value}').click
+${7:#continue...}
+
+#close browser
+browser.close
+]]></content>
+	<tabTrigger>watir-webdriver</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>watir-webdriver skeleton</description>
+</snippet>
